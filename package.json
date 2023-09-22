@@ -1,0 +1,14 @@
+{
+  "name": "eden-test",
+  "private": true,
+  "workspaces": [
+    "my-app",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently --kill-others \"cd server && bun dev\" \"cd my-app && bun dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
